@@ -1,0 +1,199 @@
+
+#return-to-top {
+   position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background: rgb(12, 43, 93);
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 6;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left:14px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+/*#return-to-top:hover {
+background: white;
+}*/
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+.column {
+    padding:0;
+}
+.column:last-child {
+    padding-bottom: 10px;
+}
+.column::after {
+    content: '';
+    clear: both;
+    display: block;
+
+}
+
+.column div:first-child {
+    margin-left: 0;
+
+}
+
+figure {
+
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+
+}
+
+/*post tin yan icon */
+ #post{
+   position: fixed;
+   bottom: 70px;
+   right: 20px;
+   background: #00AE42;
+   width: 50px;
+   height: 50px;
+   text-decoration: none;
+   -webkit-border-radius: 35px;
+   -moz-border-radius: 35px;
+   border-radius: 35px;
+   -webkit-transition: all 0.3s linear;
+   -moz-transition: all 0.3s ease;
+   -ms-transition: all 0.3s ease;
+   -o-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+   z-index: 1006;
+ }
+ #post div {
+     margin: 0;
+     position: relative;
+     display: inline-block;
+     left: 1.5rem;
+     top: 1.5rem;
+     -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+     -ms-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
+ }
+
+ #artist_post_icon{
+   position: fixed;
+   bottom: 70px;
+   right: 20px;
+   background: #00AE42;
+   width: 50px;
+   height: 50px;
+   text-decoration: none;
+   -webkit-border-radius: 35px;
+   -moz-border-radius: 35px;
+   border-radius: 35px;
+   -webkit-transition: all 0.3s linear;
+   -moz-transition: all 0.3s ease;
+   -ms-transition: all 0.3s ease;
+   -o-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+   z-index: 1006;
+ }
+ #artist_post_icon div {
+     margin: 0;
+     position: relative;
+     display: inline-block;
+     left: 1.5rem;
+     top: 1.5rem;
+     -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+     -ms-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
+ }
+
+
+/* Zoom In #1 */
+.hover01 figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+}
+.hover01 figure:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+
+}
+.hover15 figure {
+    position: relative;
+}
+.hover15 figure::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,.2);
+    border-radius: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.hover15 figure:hover::before {
+    -webkit-animation: circle .75s;
+    animation: circle .75s;
+
+}
+@-webkit-keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+@keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+.align{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
